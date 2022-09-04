@@ -121,3 +121,69 @@
 		});
 
 })(jQuery);
+
+
+contactPopulation();
+// contact info to populate the footers
+function contactPopulation() {
+	let footElem = document.getElementById("footer");
+
+	// remove prepopulated footer element information
+	while (footElem.hasChildNodes()) {
+		footElem.removeChild(footElem.firstChild);
+	}
+
+	let sectElem = document.createElement("section");
+
+	// Contact Me title
+	let titleElem = document.createElement("h2");
+	titleElem.innerHTML = "Contact Me";
+	sectElem.appendChild(titleElem);
+
+	// element that contains info for contacting options
+	let contactElem = document.createElement("dl");
+	contactElem.setAttribute("class", "alt");
+	let emailDetailElem = document.createElement("dt");
+	emailDetailElem.innerHTML = "Email";
+	contactElem.appendChild(emailDetailElem);
+	let emailInfoElem = document.createElement("dd");
+	let emailAnchor = document.createElement("a");
+	emailAnchor.setAttribute("href", "mailto:riddlen1@southernct.edu");
+	emailAnchor.setAttribute("target", "_blank");
+	emailAnchor.innerHTML = "riddlen1@southernct.edu";
+	emailInfoElem.appendChild(emailAnchor);
+	contactElem.appendChild(emailInfoElem);
+	sectElem.appendChild(contactElem);
+
+	// element that contains links to socials
+	let socialsList = document.createElement("ul");
+	socialsList.setAttribute("class", "icons");
+	// create the LinkedIn element
+	let linkedinElem = document.createElement("li");
+	let linkedinElemAnchor = document.createElement("a");
+	linkedinElemAnchor.setAttribute("href", "https://www.linkedin.com/in/nathanriddle2/");
+	linkedinElemAnchor.setAttribute("class", "icon brands fa-linkedin alt");
+	linkedinElemAnchor.setAttribute("target", "_blank");
+	linkedinElemAnchor.setAttribute("alt", "a link to my LinkedIn profile");
+	let linkedinElemSpan = document.createElement("span");
+	linkedinElemSpan.setAttribute("class", "label");
+	linkedinElemSpan.innerHTML = "LinkedIn";
+	linkedinElemAnchor.appendChild(linkedinElemSpan);
+	linkedinElem.appendChild(linkedinElemAnchor);
+	socialsList.appendChild(linkedinElem);
+	// create the GitHub element
+	let githubElem = document.createElement("li");
+	let githubElemAnchor = document.createElement("a");
+	githubElemAnchor.setAttribute("href", "https://github.com/nate1099");
+	githubElemAnchor.setAttribute("class", "icon brands fa-github alt");
+	githubElemAnchor.setAttribute("target", "_blank");
+	githubElemAnchor.setAttribute("alt", "a link to my GitHub profile");
+	let githubElemSpan = document.createElement("span");
+	githubElemSpan.setAttribute("class", "label");
+	githubElemSpan.innerHTML = "GitHub";
+	githubElemAnchor.appendChild(githubElemSpan);
+	githubElem.appendChild(githubElemAnchor);
+	socialsList.appendChild(githubElem);
+	sectElem.appendChild(socialsList);
+	footElem.appendChild(sectElem);
+}
