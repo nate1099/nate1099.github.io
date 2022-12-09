@@ -1,21 +1,3 @@
-///
-/// Stellar by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Wrapper */
-
-	#wrapper {
-		width: _size(inner);
-		max-width: calc(100% - 4em);
-		margin: 0 auto;
-
-		@include breakpoint('<=xsmall') {
-			max-width: calc(100% - 2em);
-		}
-
-		@include breakpoint('<=xxsmall') {
-			max-width: 100%;
-		}
-	}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f94800c0ed48d453bbb13895fec291afeeb6bf3e70ce498fea63fe1918512477
+size 403
