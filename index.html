@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title>My Portfolio</title>
+		<title>Nathan Riddle's Class Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -17,8 +17,7 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>My Portfolio</h1>
-						<p>A webpage portfolio made by Nathan Riddle for the Digital Foundations for Art & Design<br />
-							using a site template built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p>A webpage portfolio made by Nathan Riddle for the Digital Foundations for Art & Design</p>
 					</header>
 
 				<!-- Nav -->
@@ -43,20 +42,17 @@
 										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
 										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
 										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/Sailing_front.png" alt="Sailing Summer of 2022" /></span>
 								</div>
 							</section>
 
 						<!-- Modules Section -->
 							<section id="modules" class="main special">
 								<header class="major">
-									<h2>Modules</h2>
+									<h2>Module Gallery</h2>
 								</header>
-								<ul class="features">
+								<!-- <ul class="features">
 									<li>
 										<span class="icon major style1 solid fa-book-open"></span>
 										<h3>Research</h3>
@@ -75,20 +71,62 @@
 										<p>A collection of writings related to the visual projects.</p>
 										<a href="writing.html" class="button">Read Further</a>
 									</li>
-								</ul>
+								</ul> -->
+								<div class="row">
+									<div class="column">
+										<img src="modules/module1/result/Self_Portrait_Frame.png" image="modules/module1/result/Self-Portrait-Time-Lapse.gif" page="module1.html" btnText="View Module 1" alt="Self Portrait Time Lapse" onclick="myGalleryFunction(this);">
+									</div>
+									<div class="column">
+										<img src="img_snow.jpg" image="" page="module2.html" btnText="View Module 2" alt="Thomas and Friends Icons" onclick="myGalleryFunction(this);">
+									</div>
+									<div class="column">
+										<img src="modules/module3/result/BGCA_logo.png" image="modules\module3\result\BGCoNH Brochure Digital Version.jpg" page="module3.html" btnText="View Module 3" alt="Boys and Girls Club Informational Packet" onclick="myGalleryFunction(this);">
+									</div>
+								</div>
+								  
+								<!-- The expanding image container -->
+								<div class="imgContainer">
+									<!-- Close the image -->
+									<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+									
+									<!-- Expanded image -->
+									<img id="expandedImg" style="width:100%">
+									
+									<!-- Informational Container for the image -->
+									<div class="imgInformation">
+										<!-- Image text -->
+										<div id="imgtext"></div>
+	
+										<!-- Project View Button-->
+										<div id="moduleBtn"></div>
+									</div>
+								</div>
 							</section>
 
 						<!-- What I Learned Section -->
 							<section id="what-i-learned" class="main special">
 								<header class="major">
 									<h2>What I Learned</h2>
-									<p>This section will display what I have learned throughout the semester.</p>
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="#" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+								<p style="width:70%; margin-left: auto; margin-right: auto;">
+									This class was an absolute enjoyment to me. There are few other classes that I would be
+									willing to get up at 6 AM for. In this class, I learned how to use Photoshop
+									in a way that I haven't been able to before. My family this past summer moved
+									to South Carolina. With the photoshopping skills that I learned in this class,
+									I was able to photoshop myself into some of the images that they have taken. It
+									isn't the same as being there in person, but it's the closest that I can
+									currently get.<br /><br />On top of Photoshop, I also learned how to use Illustrator.
+									As I am someone that owns a Cricut machine, I will be able to use this moving
+									forward to make whatever projects my heart desires.<br /><br />I also learned how to
+									use InDesign, which can use a culmination of all of the knowledge I obtained
+									and use it collectively to create flyers for any events I may have in the future.
+									<br /><br />I also learned helpful concepts on design priciples that I have already
+									used in other applications, such as alignment, contrast, and balance.<br /><br />
+									Additionally, and most importantly, this class has shown me just how much I
+									love doing graphic design. While I am graduating this semester, I think I
+									will continue to find ways to further my education and knowledge in the
+									field of graphic design.
+								</p>
 							</section>
 					</div>
 

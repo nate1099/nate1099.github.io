@@ -187,3 +187,28 @@ function contactPopulation() {
 	sectElem.appendChild(socialsList);
 	footElem.appendChild(sectElem);
 }
+
+function myGalleryFunction(imgs) {
+	// Get the expanded image
+	var expandImg = document.getElementById("expandedImg");
+	// Get the image text
+	var imgText = document.getElementById("imgtext");
+	// Get the button element
+	var moduleButton = document.getElementById("moduleBtn");
+	// Use the image property of the image being clicked on from the grid
+	expandImg.src = imgs.getAttribute("image");
+	// Use the value of the alt attribute of the clickable image as text inside the expanded image
+	imgText.innerHTML = imgs.alt;
+	// Create button to go to modules page
+	var buttonElem = document.createElement("a");
+	// Set page ref for button
+	buttonElem.setAttribute("href", imgs.getAttribute("page"));
+	// Set button to button class
+	buttonElem.setAttribute("class", "button");
+	// Add button text attribute to button element
+	buttonElem.innerHTML = imgs.getAttribute("btnText");
+	// Append button to the container
+	moduleButton.replaceChildren(buttonElem);
+	// Show the container element (hidden with CSS)
+	expandImg.parentElement.style.display = "block";
+  }

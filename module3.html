@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Module 3 Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" style="margin: 10px;">
+						<h1>Module 3</h1>
+						<a href="index.html" class="icon style1 solid fa-home" style="float:none;"> HOME</a><br />
+						<a href="module1.html" class="icon style5 solid fa-folder" style="float:none; margin: 0 10px ;"> MODULE 1</a>
+						<a href="module2.html" class="icon style4 solid fa-folder" style="float:none;"> MODULE 2</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Images that were used as inspiration within the project, added to a gallery carousel. -->
+						<section id="research" class="main special">
+							<header class="major">
+								<h2>Research Images</h2>
+							</header>
+							<p>Images that provided inspiration for this project:</p>
+							<!-- Container of the carousel -->
+							<div class="slideshow-container">
+
+								<div class="mySlides fade">
+									<img src="modules/module1/research/1.jpg" style="max-height:400px">
+								</div>
+								
+								<div class="mySlides fade">
+									<img src="modules/module1/research/2.jpg" style="max-height:400px">
+								</div>
+								
+								<div class="mySlides fade">
+									<img src="modules/module1/research/3.jpg" style="max-height:400px">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="modules/module1/research/4.jpg" style="max-height:400px">
+								</div>
+								
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+
+						</section>
+
+						<!-- Desription of the project -->
+						<section id="description" class="main special">
+							<header class="major">
+								<h2>Project Description</h2>
+							</header>
+							<p>
+								I believe that what and who we are is most fruitfully 
+								reflected in what, who and how we love. Because of this 
+								concept my self-portrait intentionally carries a theme of all the 
+								people/places/things that I love the most. The image begins
+								with an empty block of my silhouette. As I would be nothing
+								without all the people and passions that define me. The sunrise
+								as the background is a reminder that each day is a new beginning.
+								Make the most of each one, and remember that the next day is
+								another chance for you to do what you haven't done yet.
+							</p>
+							<h3>Make the most of today, <br />before it becomes yesterday.</h3>
+						</section>
+
+						<!-- End project result -->
+						<section id="result" class="main special">
+							<header class="major">
+								<h2>Final Result</h2>
+							</header>
+							<img src="modules/module1/result/Self-Portrait-Time-Lapse.gif" style="max-height:400px">
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				let slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1}    
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>
+
+	</body>
+</html>
