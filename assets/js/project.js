@@ -1,3 +1,2 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:051cfb0e3aa527202bf2bb4090be0d56b0260dd5b5de02382dc7b2d3c49cbda2
-size 282
+// A JavaScript file to be ran upon the loading of the Projects page. This file will populate the page with each of the projects created for this course.
+
